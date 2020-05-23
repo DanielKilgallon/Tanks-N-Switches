@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://buttons/MenuButton.tscn" type="PackedScene" id=1]
+
+[node name="New Game Button" instance=ExtResource( 1 )]
+margin_right = 210.0
+text = "New Game"
+scene_to_load = "res://game/NewGame.tscn"
