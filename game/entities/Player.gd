@@ -23,7 +23,7 @@ func _input(event):
 func _physics_process(_delta):
 	velocity.x = 0
 	velocity.y += gravityscale
-	
+
 	if $RightRay.is_colliding():
 		var rnormal = $RightRay.get_collision_normal()
 		if rnormal.x > -0.75 and rnormal.x < -0.67:
@@ -54,7 +54,7 @@ func _physics_process(_delta):
 	else:
 		$TankBot.stop()
 		$TankTop.play("Idle")
-	
+
 	if is_on_floor():
 		can_jump = true
 		coyoteCount = 0
@@ -62,7 +62,7 @@ func _physics_process(_delta):
 		coyoteCount += 1
 		if coyoteCount > 5:
 			can_jump = false
-	
+
 	if can_jump && Input.is_action_just_pressed("jump"):
 		can_jump = false
 		velocity.y = -jumpvelocity

@@ -155,21 +155,18 @@ size_flags_vertical = 0
 position = Vector2( -300, 350 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="Tank2" type="AnimatedSprite" parent="HBoxContainer/Control"]
 position = Vector2( -500, 350 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 4 )
-frame = 1
 playing = true
 
 [node name="Tank3" type="AnimatedSprite" parent="HBoxContainer/Control"]
 position = Vector2( -100, 350 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="Label" type="Label" parent="HBoxContainer"]
